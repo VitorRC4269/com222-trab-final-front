@@ -3,7 +3,7 @@ import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http
 import { Observable, throwError } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
 import { Associado } from '../models/associado.model';
-const baseUrl = 'http://localhost:8080/api/associado';
+const baseUrl = 'https://com222-trab-final-back-production.up.railway.app/api/associado';
 
 @Injectable({
   providedIn: 'root'

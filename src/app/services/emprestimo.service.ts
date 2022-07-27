@@ -5,7 +5,7 @@ import { catchError, map } from 'rxjs/operators';
 import { Emprestimo } from '../models/emprestimo.model';
 
 
-const baseUrl = 'http://localhost:8080/api/emprestimo';
+const baseUrl = 'https://com222-trab-final-back-production.up.railway.app/api/emprestimo';
 
 @Injectable({
   providedIn: 'root'

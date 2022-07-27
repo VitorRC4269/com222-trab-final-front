@@ -4,7 +4,7 @@ import { Observable, throwError } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
 import { Funcionario } from '../models/funcionario.model';
 
-const baseUrl = 'http://localhost:8080/api/funcionario';
+const baseUrl = 'https://com222-trab-final-back-production.up.railway.app/api/funcionario';
 
 @Injectable({
   providedIn: 'root'

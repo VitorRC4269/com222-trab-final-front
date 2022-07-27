@@ -4,7 +4,7 @@ import { Observable, throwError } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
 import { Reserva } from '../models/reserva.model';
 
-const baseUrl = 'http://localhost:8080/api/reserva';
+const baseUrl = 'https://com222-trab-final-back-production.up.railway.app/api/reserva';
 
 @Injectable({
   providedIn: 'root'

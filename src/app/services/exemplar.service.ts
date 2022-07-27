@@ -3,7 +3,7 @@ import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http
 import { catchError, map, Observable, throwError } from 'rxjs';
 import { Exemplar } from '../models/exemplar.model';
 
-const baseUrl = 'http://localhost:8080/api/exemplar';
+const baseUrl = 'https://com222-trab-final-back-production.up.railway.app/api/exemplar';
 
 @Injectable({
   providedIn: 'root'
