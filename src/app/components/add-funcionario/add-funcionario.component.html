@@ -1,0 +1,60 @@
+<div>
+    <div class="submit-form">
+      <div *ngIf="!submitted">
+        
+
+
+        
+        <div class="form-group">
+          <label for="nome">Nome</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nome"
+            required
+            [(ngModel)]="funcionario.nome"
+            name="nome"
+          />
+        </div>
+  
+        <div class="form-group">
+          <label for="senha">Senha</label>
+          <input
+            class="form-control"
+            id="senha"
+            required
+            [(ngModel)]="funcionario.senha"
+            name="senha"
+          />
+        </div>
+
+        <div class="form-group">
+            <label for="funcao">Funcao</label>
+            <select class="custom-select" id="funcao" name="funcao" [(ngModel)]="funcionario.funcao">
+            <option *ngFor="let cargo of cargos"> {{ cargo }} </option>
+          </select>
+        </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              class="form-control"
+              id="email"
+              required
+              [(ngModel)]="funcionario.email"
+              name="email"
+            />
+          </div>
+
+        
+  
+        <button (click)="saveFuncionario()" class="btn btn-success">Submit</button>
+      </div>
+  
+      <div *ngIf="submitted">
+        <h4>Funcionario was submitted successfully!</h4>
+        <button class="btn btn-success" (click)="newFuncionario()">Add</button>
+      </div>
+    </div>
+  </div>
+  
